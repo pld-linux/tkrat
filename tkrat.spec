@@ -6,6 +6,7 @@ Release:	1
 License:	BSD
 Group:		X11/Applications/Networking
 Source0:	http://www.tkrat.org/downloads/stable/%{name}-%{version}.tar.gz
+# Source0-md5:	484f46b21af62705cb8948c821c8bfdb
 Patch0:		%{name}-ac.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
