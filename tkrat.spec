@@ -1,7 +1,7 @@
 Summary:	A Tcl/Tk Mail User Agent
 Summary(pl):	Program pocztowy z interfejsem Tcl/Tk
 Name:		tkrat
-Version:	2.0.2
+Version:	2.0.3
 Release:	1
 License:	BSD
 Group:		X11/Applications/Networking
