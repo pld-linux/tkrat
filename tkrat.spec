@@ -12,7 +12,6 @@ BuildRequires:	automake
 BuildRequires:	tk-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define 	_prefix		/usr/X11R6
 
 %description
 TkRat is a modern Mail User Agent tkat speaks MIME. It has an inteface
