@@ -1,0 +1,3 @@
+- finaly changed stupid %%define %%{_prefix} to _prefix
+- removed Requires: tk
+- added BuildRequires: tk-devel
