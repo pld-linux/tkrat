@@ -30,7 +30,7 @@ byæ klientem POP oraz IMAP, wykorzystuje te¿ pgp/GnuPg.
 
 %build
 aclocal
-autoconf
+%{__autoconf}
 %configure2_13 \
 	--with-install-prefix=$RPM_BUILD_ROOT
 
