@@ -1,0 +1,29 @@
+diff -urN tkrat-2.0.2/configure.in tkrat-2.0.2-new/configure.in
+--- tkrat-2.0.2/configure.in	Thu Jun 21 20:00:16 2001
++++ tkrat-2.0.2-new/configure.in	Wed Aug 22 22:05:34 2001
+@@ -107,21 +107,21 @@
+     if test "x$tclsh" = "x"; then
+ 	AC_PATH_PROG(tclsh, tclsh, , $PATH)
+ 	tv=`echo 'puts $tcl_version' | $tclsh`
+-	changequote(<<, >>)dnl
+ 	case $tv in
+ 	    8.[123456789]*)
+ 		;;
++	    ""*)
++		;;
+ 	    *)
+-		AC_MSG_ERROR(<<Can not find tcl/tk 8.1 or later in path ($tclsh is version $tv)>>)
++		AC_MSG_ERROR('Can not find tcl/tk 8.1 or later in path ($tclsh is version $tv)')
+ 		;;
+ 	esac
+-	changequote([, ])dnl
+     fi
+     if test "x$tclsh" = "x"; then
+ 	AC_MSG_ERROR('Can not find tcl/tk 8.1 or later in path')
+     fi
+ fi
+-AC_PATH_PROG(wish, wish$tv, , $PATH)
++AC_PATH_PROG(wish, wish, , $PATH)
+ if test "x$wish" = "x"; then
+     AC_MSG_ERROR('Can't find matching wish$tc')
+ fi
