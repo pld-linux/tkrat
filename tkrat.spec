@@ -11,10 +11,10 @@ Source0:	http://www.tkrat.org/downloads/stable/%{name}-%{version}.tar.gz
 Patch0:		%{name}-ac.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
-Requires:	tk
+BuildRequires:	tk-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define %{_prefix}		/usr/X11R6
+%define 	_prefix		/usr/X11R6
 
 %description 
 TkRat is a modern Mail User Agent tkat speaks MIME. It has an inteface
