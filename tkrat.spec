@@ -12,6 +12,8 @@ Group(pl):	X11/Aplikacje/Sieciowe
 Requires:	tk
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define %{_prefix}		/usr/X11R6
+
 %description 
 TkRat is a modern Mail User Agent tkat speaks MIME. It has an inteface
 built in Tcl/Tk and kernel written in C. Also features POP, IMAP and
@@ -22,6 +24,7 @@ TkRat jest nwoczesnym programem pocztowym znaj±cym MIME. Jego
 interfejs jest zbudowany w Tcl/Tk, a j±dro napisane in C. TkRat
 mo¿e byæ klientem POP oraz IMAP, wykorzystuje te¿ pgp/GnuPg.
 
+
 %prep
 %setup -q
 %patch0 -p1
@@ -29,7 +32,9 @@ mo¿e byæ klientem POP oraz IMAP, wykorzystuje te¿ pgp/GnuPg.
 %build
 aclocal
 autoconf
-%configure2_13 --with-install-prefix=$RPM_BUILD_ROOT
+%configure2_13 \
+	--with-install-prefix=$RPM_BUILD_ROOT
+
 %{__make}
 
 %install
