@@ -40,16 +40,13 @@ byæ klientem POP oraz IMAP, wykorzystuje te¿ pgp/GnuPg.
 rm -rf $RPM_BUILD_ROOT
 %{__make} install
 
-gzip -9nf BLURB CONFIGURATION COPYRIGHT README
-gzip -9nf doc/{changes,interface,userproc.example,userprocs}
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
-%doc doc/*.gz
+%doc BLURB CONFIGURATION COPYRIGHT README
+%doc doc/{changes,interface,userproc.example,userprocs}
 %attr(755,root,root) %{_bindir}/tkrat
 %{_libdir}/tkrat2.0
 %{_datadir}/tkrat2.0
