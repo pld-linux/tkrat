@@ -14,7 +14,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
 
-%description 
+%description
 TkRat is a modern Mail User Agent tkat speaks MIME. It has an inteface
 built in Tcl/Tk and kernel written in C. Also features POP, IMAP and
 pgp support.
