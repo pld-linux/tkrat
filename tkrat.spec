@@ -5,8 +5,6 @@ Version:	2.0.3
 Release:	1
 License:	BSD
 Group:		X11/Applications/Networking
-Group(de):	X11/Applikationen/Netzwerkwesen
-Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	http://www.tkrat.org/downloads/stable/%{name}-%{version}.tar.gz
 Patch0:		%{name}-ac.patch
 BuildRequires:	autoconf
