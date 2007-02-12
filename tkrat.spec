@@ -1,5 +1,5 @@
 Summary:	A Tcl/Tk Mail User Agent
-Summary(pl):	Program pocztowy z interfejsem Tcl/Tk
+Summary(pl.UTF-8):   Program pocztowy z interfejsem Tcl/Tk
 Name:		tkrat
 Version:	2.0.3
 Release:	1
@@ -20,10 +20,10 @@ TkRat is a modern Mail User Agent tkat speaks MIME. It has an inteface
 built in Tcl/Tk and kernel written in C. Also features POP, IMAP and
 pgp support.
 
-%description -l pl
-TkRat jest nowoczesnym programem pocztowym znaj±cym MIME. Jego
-interfejs jest zbudowany w Tcl/Tk, a j±dro napisane in C. TkRat mo¿e
-byæ klientem POP oraz IMAP, wykorzystuje te¿ pgp/GnuPg.
+%description -l pl.UTF-8
+TkRat jest nowoczesnym programem pocztowym znajÄ…cym MIME. Jego
+interfejs jest zbudowany w Tcl/Tk, a jÄ…dro napisane in C. TkRat moÅ¼e
+byÄ‡ klientem POP oraz IMAP, wykorzystuje teÅ¼ pgp/GnuPg.
 
 %prep
 %setup -q
