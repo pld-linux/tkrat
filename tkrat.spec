@@ -1,5 +1,5 @@
 Summary:	A Tcl/Tk Mail User Agent
-Summary(pl.UTF-8):   Program pocztowy z interfejsem Tcl/Tk
+Summary(pl.UTF-8):	Program pocztowy z interfejsem Tcl/Tk
 Name:		tkrat
 Version:	2.0.3
 Release:	1
