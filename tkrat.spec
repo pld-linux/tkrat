@@ -27,7 +27,7 @@ być klientem POP oraz IMAP, wykorzystuje też pgp/GnuPg.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__aclocal}
